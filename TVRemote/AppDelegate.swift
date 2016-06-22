@@ -15,6 +15,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // Configure SpeechKit lib, this method should be called _before_ any SpeechKit functions.
+        // Generate your own app key for this purpose.
+//        YSKSpeechKit.sharedInstance().configureWithAPIKey("069b6659-984b-4c5f-880e-aaedcfd84102");
+        YSKSpeechKit.sharedInstance().configureWithAPIKey("0b3cac19-a4d0-4240-b4fd-646f15c3d702");
+        
+        // [OPTIONAL] Set SpeechKit log level, for more options see YSKLogLevel enum.
+        YSKSpeechKit.sharedInstance().setLogLevel(YSKLogLevel(YSKLogLevelWarn));
+        
+        // [OPTIONAL] Set YSKSpeechKit parameters, for all parameters and possible values see documentation.
+        YSKSpeechKit.sharedInstance().setParameter(YSKDisableAntimat, withValue: "false");
+        
+//        window = UIWindow(frame: UIScreen.mainScreen().bounds);
+//        
+//        let recognizerController = YSKRecognizerViewController(recognizerLanguage: YSKRecognitionLanguageRussian, recognizerModel: YSKRecognitionModelGeneral);
+//        let navigationController = UINavigationController(rootViewController: recognizerController);
+//        navigationController.navigationBar.translucent = true;
+//
+//        window?.rootViewController = ViewController();
+//        window?.makeKeyAndVisible();
+
+        
         // Override point for customization after application launch.
         return true
     }

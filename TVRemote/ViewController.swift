@@ -46,14 +46,10 @@ class ViewController: UIViewController, UITabBarDelegate {
     var current = "https://www.yandex.ru" as NSString
     
     func checkBrowser() {
-        let currentURL : NSString
-        do {
-            currentURL = try (browser?.request?.URL?.absoluteString)!
-        } catch _ {
-            currentURL = current
-        }
-        if (currentURL != current) {
-            HTTPPost("https://tvremote-1334.appspot.com/tv", json : ["url" : currentURL as String]) {
+        let currentURL : NSString?
+        currentURL = browser.request?.URL?.absoluteString
+        if (currentURL != nil && currentURL != current) {
+            HTTPPost("https://tvremote-1334.appspot.com/tv", json : ["url" : currentURL! as String]) {
 //                HTTPPost("http://localhost:8080/tv", json : ["url" : currentURL as String]) {
                 (data: String, error: String?) -> Void in
                 if error != nil {
@@ -63,13 +59,13 @@ class ViewController: UIViewController, UITabBarDelegate {
                     print(data)
                 }
             }
-            current = currentURL
+            current = currentURL!
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadSearchEngine("https://www.yandex.ru")
+        loadSearchEngine()
         timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(ViewController.checkBrowser), userInfo: nil, repeats: true)
                 
     }
@@ -79,26 +75,34 @@ class ViewController: UIViewController, UITabBarDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func loadSearchEngine(searchEngineURLString: String) {
+    func loadSearchEngine(query: String? = nil) {
+        var searchEngineURLString = "https://www.yandex.ru"
         var searchEngineURL = NSURL(string: searchEngineURLString)
+        if(query != nil) {
+            var url = "https://yandex.ru/yandsearch?text=" + query!
+            searchEngineURL = NSURL(string: url.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!)
+        }
         var searchEngineURLRequest = NSURLRequest(URL: searchEngineURL!)
-        browser.loadRequest(searchEngineURLRequest)
+        browser?.loadRequest(searchEngineURLRequest)
     }
     
     func tabBar(tabBar: UITabBar!, didSelectItem item: UITabBarItem!) {
-        var searchEngineURLString = "https://www.yandex.ru";
         switch item.tag  {
         case 0:
-            loadSearchEngine(searchEngineURLString);
+            loadSearchEngine()
             break
         case 1:
-            browser.goBack();
+            browser.goBack()
             break
         case 2:
             // VOICE RECOGNITION
+            let vc = self.storyboard?.instantiateViewControllerWithIdentifier("speechview") as! YSKRecognizerViewController?
+            if (vc != nil) {
+                self.presentViewController(vc!, animated: true, completion: nil)
+            }
             break
         default:
-            loadSearchEngine(searchEngineURLString);
+            loadSearchEngine()
             break
         }
         

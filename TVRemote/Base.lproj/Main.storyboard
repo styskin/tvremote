@@ -5,10 +5,59 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
+        <!--speech-->
+        <scene sceneID="rwY-6N-YgP">
+            <objects>
+                <tableViewController storyboardIdentifier="speechview" id="T3I-a4-dET" userLabel="speech" customClass="YSKRecognizerViewController" customModule="TVRemote" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JZF-nI-ysz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="SrO-ZN-kb1">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SrO-ZN-kb1" id="70S-Hx-dO9">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="T3I-a4-dET" id="mci-Bt-LxE"/>
+                            <outlet property="delegate" destination="T3I-a4-dET" id="7ya-Z3-kJV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="Kcr-tU-wme"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="recognizerLanguage" value="ru"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="recognizerModel" value="general"/>
+                    </userDefinedRuntimeAttributes>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mc1-H7-lfe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885" y="13"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="O8v-KZ-3ag">
+            <objects>
+                <navigationController id="si3-OU-4Jl" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w5y-tX-4j7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="T3I-a4-dET" kind="relationship" relationship="rootViewController" id="KX0-SB-TLE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ygp-3V-s9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="13"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TVRemote" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="browserview" id="BYZ-38-t0r" customClass="ViewController" customModule="TVRemote" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -30,7 +79,7 @@
                                 <items>
                                     <tabBarItem title="Yandex" id="B2p-XC-xRp"/>
                                     <tabBarItem tag="1" title="Back" id="jOj-PI-oxq"/>
-                                    <tabBarItem title="Voice" id="Om4-5c-2Fg"/>
+                                    <tabBarItem tag="2" title="Voice" id="Om4-5c-2Fg"/>
                                 </items>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="ZaJ-Uk-LEe"/>
@@ -42,6 +91,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="browser" destination="ruw-On-xf9" id="iY2-Hg-g6e"/>
+                        <segue destination="T3I-a4-dET" kind="presentation" id="dze-tq-7sz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -49,4 +99,7 @@
             <point key="canvasLocation" x="304" y="353"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dze-tq-7sz"/>
+    </inferredMetricsTieBreakers>
 </document>

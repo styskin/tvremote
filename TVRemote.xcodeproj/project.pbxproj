@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26FA919368402A34924EBA0E /* libPods-TVRemoteTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1808990BC11320211C58F1 /* libPods-TVRemoteTests.a */; };
+		477C179EBFE150E7AF77173C /* libPods-TVRemoteUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3753ED8E3A695EA4B91A6B1E /* libPods-TVRemoteUITests.a */; };
+		E5998F07D54C5945F580BBC9 /* libPods-TVRemote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46ED33A6EC2DDE30EA4CEE23 /* libPods-TVRemote.a */; };
 		EA7D639A1D033735001675C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7D63991D033735001675C3 /* AppDelegate.swift */; };
 		EA7D639C1D033735001675C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7D639B1D033735001675C3 /* ViewController.swift */; };
 		EA7D639F1D033735001675C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7D639D1D033735001675C3 /* Main.storyboard */; };
@@ -14,6 +17,16 @@
 		EA7D63A41D033735001675C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7D63A21D033735001675C3 /* LaunchScreen.storyboard */; };
 		EA7D63AF1D033735001675C3 /* TVRemoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7D63AE1D033735001675C3 /* TVRemoteTests.swift */; };
 		EA7D63BA1D033735001675C3 /* TVRemoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7D63B91D033735001675C3 /* TVRemoteUITests.swift */; };
+		EAE837691D1AC1C4000938D8 /* UIColor+Brightness.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE837641D1AC1C4000938D8 /* UIColor+Brightness.m */; };
+		EAE8376A1D1AC1C4000938D8 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE837661D1AC1C4000938D8 /* UIColor+Hex.m */; };
+		EAE8376B1D1AC1C4000938D8 /* UIView+NIB.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE837681D1AC1C4000938D8 /* UIView+NIB.m */; };
+		EAE837761D1AC1E1000938D8 /* YSKRecognizeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE8376D1D1AC1E1000938D8 /* YSKRecognizeButton.m */; };
+		EAE837771D1AC1E1000938D8 /* YSKRecognizerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE8376F1D1AC1E1000938D8 /* YSKRecognizerCell.m */; };
+		EAE837781D1AC1E1000938D8 /* YSKRecognizerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAE837701D1AC1E1000938D8 /* YSKRecognizerCell.xib */; };
+		EAE837791D1AC1E1000938D8 /* YSKRecognizerPowerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE837721D1AC1E1000938D8 /* YSKRecognizerPowerView.m */; };
+		EAE8377A1D1AC1E1000938D8 /* YSKRecognizerSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE837741D1AC1E1000938D8 /* YSKRecognizerSectionHeaderView.m */; };
+		EAE8377B1D1AC1E1000938D8 /* YSKRecognizerSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAE837751D1AC1E1000938D8 /* YSKRecognizerSectionHeaderView.xib */; };
+		EAE8377D1D1AC227000938D8 /* YSKRecognizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE8377C1D1AC227000938D8 /* YSKRecognizerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +47,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28E428921C59CF8E310C86A7 /* Pods-TVRemoteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemoteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVRemoteUITests/Pods-TVRemoteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B1808990BC11320211C58F1 /* libPods-TVRemoteTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TVRemoteTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3753ED8E3A695EA4B91A6B1E /* libPods-TVRemoteUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TVRemoteUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A0F2CF781ECE0D7FE9DFA03 /* Pods-TVRemoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVRemoteTests/Pods-TVRemoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		46ED33A6EC2DDE30EA4CEE23 /* libPods-TVRemote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TVRemote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64F8B42E6E9FC9AA89F541E4 /* Pods-TVRemoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemoteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVRemoteTests/Pods-TVRemoteTests.release.xcconfig"; sourceTree = "<group>"; };
+		6C0AB053E1921627F0A9C370 /* Pods-TVRemote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVRemote/Pods-TVRemote.debug.xcconfig"; sourceTree = "<group>"; };
+		DD20F63F8C999C83F80805B3 /* Pods-TVRemote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemote.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVRemote/Pods-TVRemote.release.xcconfig"; sourceTree = "<group>"; };
+		E434D7329AF6C36FD83A7CD2 /* Pods-TVRemoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemoteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVRemoteUITests/Pods-TVRemoteUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EA7D63961D033735001675C3 /* TVRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7D63991D033735001675C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA7D639B1D033735001675C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +69,25 @@
 		EA7D63B51D033735001675C3 /* TVRemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVRemoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7D63B91D033735001675C3 /* TVRemoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRemoteUITests.swift; sourceTree = "<group>"; };
 		EA7D63BB1D033735001675C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAE8375E1D1AC06B000938D8 /* TVRemote-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TVRemote-Bridging-Header.h"; sourceTree = "<group>"; };
+		EAE837621D1AC1C4000938D8 /* TVRemote-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TVRemote-Bridging-Header.h"; sourceTree = "<group>"; };
+		EAE837631D1AC1C4000938D8 /* UIColor+Brightness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Brightness.h"; path = "categories/UIColor+Brightness.h"; sourceTree = "<group>"; };
+		EAE837641D1AC1C4000938D8 /* UIColor+Brightness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Brightness.m"; path = "categories/UIColor+Brightness.m"; sourceTree = "<group>"; };
+		EAE837651D1AC1C4000938D8 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Hex.h"; path = "categories/UIColor+Hex.h"; sourceTree = "<group>"; };
+		EAE837661D1AC1C4000938D8 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Hex.m"; path = "categories/UIColor+Hex.m"; sourceTree = "<group>"; };
+		EAE837671D1AC1C4000938D8 /* UIView+NIB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+NIB.h"; path = "categories/UIView+NIB.h"; sourceTree = "<group>"; };
+		EAE837681D1AC1C4000938D8 /* UIView+NIB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+NIB.m"; path = "categories/UIView+NIB.m"; sourceTree = "<group>"; };
+		EAE8376C1D1AC1E1000938D8 /* YSKRecognizeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YSKRecognizeButton.h; path = views/YSKRecognizeButton.h; sourceTree = "<group>"; };
+		EAE8376D1D1AC1E1000938D8 /* YSKRecognizeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YSKRecognizeButton.m; path = views/YSKRecognizeButton.m; sourceTree = "<group>"; };
+		EAE8376E1D1AC1E1000938D8 /* YSKRecognizerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YSKRecognizerCell.h; path = views/YSKRecognizerCell.h; sourceTree = "<group>"; };
+		EAE8376F1D1AC1E1000938D8 /* YSKRecognizerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YSKRecognizerCell.m; path = views/YSKRecognizerCell.m; sourceTree = "<group>"; };
+		EAE837701D1AC1E1000938D8 /* YSKRecognizerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YSKRecognizerCell.xib; path = views/YSKRecognizerCell.xib; sourceTree = "<group>"; };
+		EAE837711D1AC1E1000938D8 /* YSKRecognizerPowerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YSKRecognizerPowerView.h; path = views/YSKRecognizerPowerView.h; sourceTree = "<group>"; };
+		EAE837721D1AC1E1000938D8 /* YSKRecognizerPowerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YSKRecognizerPowerView.m; path = views/YSKRecognizerPowerView.m; sourceTree = "<group>"; };
+		EAE837731D1AC1E1000938D8 /* YSKRecognizerSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YSKRecognizerSectionHeaderView.h; path = views/YSKRecognizerSectionHeaderView.h; sourceTree = "<group>"; };
+		EAE837741D1AC1E1000938D8 /* YSKRecognizerSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YSKRecognizerSectionHeaderView.m; path = views/YSKRecognizerSectionHeaderView.m; sourceTree = "<group>"; };
+		EAE837751D1AC1E1000938D8 /* YSKRecognizerSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YSKRecognizerSectionHeaderView.xib; path = views/YSKRecognizerSectionHeaderView.xib; sourceTree = "<group>"; };
+		EAE8377C1D1AC227000938D8 /* YSKRecognizerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSKRecognizerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5998F07D54C5945F580BBC9 /* libPods-TVRemote.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26FA919368402A34924EBA0E /* libPods-TVRemoteTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +111,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				477C179EBFE150E7AF77173C /* libPods-TVRemoteUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BB74D22B67F380D5815F7C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AB053E1921627F0A9C370 /* Pods-TVRemote.debug.xcconfig */,
+				DD20F63F8C999C83F80805B3 /* Pods-TVRemote.release.xcconfig */,
+				3A0F2CF781ECE0D7FE9DFA03 /* Pods-TVRemoteTests.debug.xcconfig */,
+				64F8B42E6E9FC9AA89F541E4 /* Pods-TVRemoteTests.release.xcconfig */,
+				28E428921C59CF8E310C86A7 /* Pods-TVRemoteUITests.debug.xcconfig */,
+				E434D7329AF6C36FD83A7CD2 /* Pods-TVRemoteUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6975779F09AC069C561747F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46ED33A6EC2DDE30EA4CEE23 /* libPods-TVRemote.a */,
+				2B1808990BC11320211C58F1 /* libPods-TVRemoteTests.a */,
+				3753ED8E3A695EA4B91A6B1E /* libPods-TVRemoteUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EA7D638D1D033735001675C3 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +148,8 @@
 				EA7D63AD1D033735001675C3 /* TVRemoteTests */,
 				EA7D63B81D033735001675C3 /* TVRemoteUITests */,
 				EA7D63971D033735001675C3 /* Products */,
+				5BB74D22B67F380D5815F7C9 /* Pods */,
+				6975779F09AC069C561747F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +166,13 @@
 		EA7D63981D033735001675C3 /* TVRemote */ = {
 			isa = PBXGroup;
 			children = (
+				EAE837621D1AC1C4000938D8 /* TVRemote-Bridging-Header.h */,
+				EAE837611D1AC17E000938D8 /* categories */,
+				EAE8375E1D1AC06B000938D8 /* TVRemote-Bridging-Header.h */,
 				EA7D63991D033735001675C3 /* AppDelegate.swift */,
+				EAE837601D1AC175000938D8 /* views */,
 				EA7D639B1D033735001675C3 /* ViewController.swift */,
+				EAE8377C1D1AC227000938D8 /* YSKRecognizerViewController.swift */,
 				EA7D639D1D033735001675C3 /* Main.storyboard */,
 				EA7D63A01D033735001675C3 /* Assets.xcassets */,
 				EA7D63A21D033735001675C3 /* LaunchScreen.storyboard */,
@@ -125,6 +199,36 @@
 			path = TVRemoteUITests;
 			sourceTree = "<group>";
 		};
+		EAE837601D1AC175000938D8 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				EAE8376C1D1AC1E1000938D8 /* YSKRecognizeButton.h */,
+				EAE8376D1D1AC1E1000938D8 /* YSKRecognizeButton.m */,
+				EAE8376E1D1AC1E1000938D8 /* YSKRecognizerCell.h */,
+				EAE8376F1D1AC1E1000938D8 /* YSKRecognizerCell.m */,
+				EAE837701D1AC1E1000938D8 /* YSKRecognizerCell.xib */,
+				EAE837711D1AC1E1000938D8 /* YSKRecognizerPowerView.h */,
+				EAE837721D1AC1E1000938D8 /* YSKRecognizerPowerView.m */,
+				EAE837731D1AC1E1000938D8 /* YSKRecognizerSectionHeaderView.h */,
+				EAE837741D1AC1E1000938D8 /* YSKRecognizerSectionHeaderView.m */,
+				EAE837751D1AC1E1000938D8 /* YSKRecognizerSectionHeaderView.xib */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		EAE837611D1AC17E000938D8 /* categories */ = {
+			isa = PBXGroup;
+			children = (
+				EAE837631D1AC1C4000938D8 /* UIColor+Brightness.h */,
+				EAE837641D1AC1C4000938D8 /* UIColor+Brightness.m */,
+				EAE837651D1AC1C4000938D8 /* UIColor+Hex.h */,
+				EAE837661D1AC1C4000938D8 /* UIColor+Hex.m */,
+				EAE837671D1AC1C4000938D8 /* UIView+NIB.h */,
+				EAE837681D1AC1C4000938D8 /* UIView+NIB.m */,
+			);
+			name = categories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA7D63BE1D033735001675C3 /* Build configuration list for PBXNativeTarget "TVRemote" */;
 			buildPhases = (
+				768BC8839963A6AE77DFADBA /* [CP] Check Pods Manifest.lock */,
 				EA7D63921D033735001675C3 /* Sources */,
 				EA7D63931D033735001675C3 /* Frameworks */,
 				EA7D63941D033735001675C3 /* Resources */,
+				FCD012F2071D64A374112FC7 /* [CP] Embed Pods Frameworks */,
+				4EBE95389ABE45565ACF6A34 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +256,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA7D63C11D033735001675C3 /* Build configuration list for PBXNativeTarget "TVRemoteTests" */;
 			buildPhases = (
+				742B98107C43B21EF77AA60C /* [CP] Check Pods Manifest.lock */,
 				EA7D63A61D033735001675C3 /* Sources */,
 				EA7D63A71D033735001675C3 /* Frameworks */,
 				EA7D63A81D033735001675C3 /* Resources */,
+				7F618AC1CD75AE507DDC1741 /* [CP] Embed Pods Frameworks */,
+				656F0F46CF4FE97BD66DFF27 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +277,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA7D63C41D033735001675C3 /* Build configuration list for PBXNativeTarget "TVRemoteUITests" */;
 			buildPhases = (
+				D35841E6A5D704AF7F9588A6 /* [CP] Check Pods Manifest.lock */,
 				EA7D63B11D033735001675C3 /* Sources */,
 				EA7D63B21D033735001675C3 /* Frameworks */,
 				EA7D63B31D033735001675C3 /* Resources */,
+				6DDBE834913652FBBFD0EE1C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,7 +342,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAE8377B1D1AC1E1000938D8 /* YSKRecognizerSectionHeaderView.xib in Resources */,
 				EA7D63A41D033735001675C3 /* LaunchScreen.storyboard in Resources */,
+				EAE837781D1AC1E1000938D8 /* YSKRecognizerCell.xib in Resources */,
 				EA7D63A11D033735001675C3 /* Assets.xcassets in Resources */,
 				EA7D639F1D033735001675C3 /* Main.storyboard in Resources */,
 			);
@@ -252,13 +366,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4EBE95389ABE45565ACF6A34 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVRemote/Pods-TVRemote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		656F0F46CF4FE97BD66DFF27 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVRemoteTests/Pods-TVRemoteTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DDBE834913652FBBFD0EE1C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVRemoteUITests/Pods-TVRemoteUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		742B98107C43B21EF77AA60C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		768BC8839963A6AE77DFADBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7F618AC1CD75AE507DDC1741 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVRemoteTests/Pods-TVRemoteTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D35841E6A5D704AF7F9588A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FCD012F2071D64A374112FC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVRemote/Pods-TVRemote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA7D63921D033735001675C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAE8377D1D1AC227000938D8 /* YSKRecognizerViewController.swift in Sources */,
+				EAE837771D1AC1E1000938D8 /* YSKRecognizerCell.m in Sources */,
+				EAE837761D1AC1E1000938D8 /* YSKRecognizeButton.m in Sources */,
+				EAE837791D1AC1E1000938D8 /* YSKRecognizerPowerView.m in Sources */,
+				EAE837691D1AC1C4000938D8 /* UIColor+Brightness.m in Sources */,
+				EAE8376A1D1AC1C4000938D8 /* UIColor+Hex.m in Sources */,
 				EA7D639C1D033735001675C3 /* ViewController.swift in Sources */,
 				EA7D639A1D033735001675C3 /* AppDelegate.swift in Sources */,
+				EAE8377A1D1AC1E1000938D8 /* YSKRecognizerSectionHeaderView.m in Sources */,
+				EAE8376B1D1AC1C4000938D8 /* UIView+NIB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,8 +643,11 @@
 		};
 		EA7D63BF1D033735001675C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C0AB053E1921627F0A9C370 /* Pods-TVRemote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TVRemote/Info.plist;
@@ -407,13 +655,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.styskin.TVRemote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TVRemote/TVRemote-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		EA7D63C01D033735001675C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD20F63F8C999C83F80805B3 /* Pods-TVRemote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TVRemote/Info.plist;
@@ -421,11 +674,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.styskin.TVRemote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TVRemote/TVRemote-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		EA7D63C21D033735001675C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A0F2CF781ECE0D7FE9DFA03 /* Pods-TVRemoteTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TVRemoteTests/Info.plist;
@@ -438,6 +693,7 @@
 		};
 		EA7D63C31D033735001675C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64F8B42E6E9FC9AA89F541E4 /* Pods-TVRemoteTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TVRemoteTests/Info.plist;
@@ -450,6 +706,7 @@
 		};
 		EA7D63C51D033735001675C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28E428921C59CF8E310C86A7 /* Pods-TVRemoteUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = TVRemoteUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -461,6 +718,7 @@
 		};
 		EA7D63C61D033735001675C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E434D7329AF6C36FD83A7CD2 /* Pods-TVRemoteUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = TVRemoteUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -489,6 +747,7 @@
 				EA7D63C01D033735001675C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA7D63C11D033735001675C3 /* Build configuration list for PBXNativeTarget "TVRemoteTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +756,7 @@
 				EA7D63C31D033735001675C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA7D63C41D033735001675C3 /* Build configuration list for PBXNativeTarget "TVRemoteUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +765,7 @@
 				EA7D63C61D033735001675C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
