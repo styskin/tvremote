@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewController.loadSearchEngine(String?) -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "browser">
+            </PersistentString>
+            <PersistentString
+               value = "NSURL(string: (searchEngineURLString + &quot;/yandsearch?text=&quot; + query!))">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "YSKRecognizerViewController.tableView(UITableView, didSelectRowAtIndexPath : NSIndexPath) -&gt; ():YSKRecognizerViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell!.resultLabel">
+            </PersistentString>
+            <PersistentString
+               value = "cell!.resultLabel?.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
