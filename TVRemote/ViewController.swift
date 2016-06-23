@@ -44,21 +44,27 @@ class ViewController: UIViewController, UITabBarDelegate {
     var timer = NSTimer()
     var curl = "https://www.yandex.ru"
     var current = "https://www.yandex.ru" as NSString
+    var server = "https://tvremote-1334.appspot.com/tv"
+//    var server = "http://localhost:8080/tv"
+    
+    func sendToServer(currentURL : NSString, force: Int) {
+        HTTPPost(server, json : ["url" : currentURL as String, "force" : String(force)]) {
+            (data: String, error: String?) -> Void in
+            if error != nil {
+                print(error)
+            } else {
+                // DEBUG INFO
+                print(data)
+            }
+        }
+        
+    }
     
     func checkBrowser() {
         let currentURL : NSString?
         currentURL = browser.request?.URL?.absoluteString
         if (currentURL != nil && currentURL != current) {
-            HTTPPost("https://tvremote-1334.appspot.com/tv", json : ["url" : currentURL! as String]) {
-//                HTTPPost("http://localhost:8080/tv", json : ["url" : currentURL as String]) {
-                (data: String, error: String?) -> Void in
-                if error != nil {
-                    print(error)
-                } else {
-                    print("data is : \n\n\n")
-                    print(data)
-                }
-            }
+            sendToServer(currentURL!, force: 0)
             current = currentURL!
         }
     }
@@ -100,6 +106,10 @@ class ViewController: UIViewController, UITabBarDelegate {
             if (vc != nil) {
                 self.presentViewController(vc!, animated: true, completion: nil)
             }
+            break
+        case 3:
+            // FORCE ON TV
+            sendToServer(current, force: 1)
             break
         default:
             loadSearchEngine()

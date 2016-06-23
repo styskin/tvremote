@@ -79,6 +79,7 @@
                                 <items>
                                     <tabBarItem title="Yandex" id="B2p-XC-xRp"/>
                                     <tabBarItem tag="1" title="Back" id="jOj-PI-oxq"/>
+                                    <tabBarItem tag="3" title="OpenOnTV" id="pI8-b4-Pg3"/>
                                     <tabBarItem tag="2" title="Voice" id="Om4-5c-2Fg"/>
                                 </items>
                                 <connections>
