@@ -24,5 +24,16 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "ViewController.sendToServer(NSString, force : Int) -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "String(force)">
+            </PersistentString>
+            <PersistentString
+               value = "currentURL as String">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TVRemote/ViewController.swift"
-            timestampString = "488306156.843947"
+            timestampString = "488577333.64315"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "tabBar(_:didSelectItem:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TVRemote/ViewController.swift"
-            timestampString = "488306156.843947"
+            timestampString = "488577333.64315"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "tabBar(_:didSelectItem:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,13 +58,109 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TVRemote/ViewController.swift"
-            timestampString = "488306150.895934"
+            timestampString = "488577333.64315"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "loadSearchEngine(_:)"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TVRemote/ViewController.swift"
+            timestampString = "488578188.088987"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "sendToServer(_:force:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TVRemote.ViewController.sendToServer (__ObjC.NSString, force : Swift.Int) -&gt; ()"
+                  moduleName = "TVRemote"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/styskin/Documents/TVRemote/TVRemote/ViewController.swift"
+                  timestampString = "488578716.226233"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TVRemote.ViewController.(sendToServer (__ObjC.NSString, force : Swift.Int) -&gt; ()).(closure #1)"
+                  moduleName = "TVRemote"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/styskin/Documents/TVRemote/TVRemote/ViewController.swift"
+                  timestampString = "488578716.226535"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TVRemote/ViewController.swift"
+            timestampString = "488578180.981043"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
+            landmarkName = "reader(_:didScanResult:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TVRemote.ViewController.(reader (QRCodeReader.QRCodeReaderViewController, didScanResult : QRCodeReader.QRCodeReaderResult) -&gt; ()).(closure #1)"
+                  moduleName = "TVRemote"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/styskin/Documents/TVRemote/TVRemote/ViewController.swift"
+                  timestampString = "488654349.032627"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "156"
+                  endingLineNumber = "156"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TVRemote.ViewController.(reader (QRCodeReader.QRCodeReaderViewController, didScanResult : QRCodeReader.QRCodeReaderResult) -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "TVRemote"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/styskin/Documents/TVRemote/TVRemote/ViewController.swift"
+                  timestampString = "488654349.032843"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "158"
+                  endingLineNumber = "158"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

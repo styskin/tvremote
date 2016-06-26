@@ -7,8 +7,8 @@
 //
 
 import UIKit
-
-
+import AVFoundation
+import QRCodeReader
 
 func HTTPsendRequest(request: NSMutableURLRequest,callback: (String, String?) -> Void) {
     
@@ -32,12 +32,14 @@ func HTTPPost(url: String, json : [String : String], callback: (String, String?)
     let request = NSMutableURLRequest(URL: NSURL(string: url)!) //To get the URL of the receiver , var URL: NSURL? is used
     request.HTTPMethod = "POST"
     request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+    var deviceid = UIDevice.currentDevice().identifierForVendor!.UUIDString;
+    request.setValue(String(format: "device=\"%@\"", deviceid), forHTTPHeaderField: "Cookie")
     request.HTTPBody = jsonData
     HTTPsendRequest(request, callback: callback)
 }
 
 
-class ViewController: UIViewController, UITabBarDelegate {
+class ViewController: UIViewController, UITabBarDelegate, QRCodeReaderViewControllerDelegate {
     
     @IBOutlet weak var browser: UIWebView!
     
@@ -45,7 +47,17 @@ class ViewController: UIViewController, UITabBarDelegate {
     var curl = "https://www.yandex.ru"
     var current = "https://www.yandex.ru" as NSString
     var server = "https://tvremote-1334.appspot.com/tv"
-//    var server = "http://localhost:8080/tv"
+//    var server = "http://192.168.199.13:8080/tv"
+    
+    lazy var readerVC: QRCodeReaderViewController = {
+        let builder = QRCodeViewControllerBuilder { builder in
+            builder.reader          = QRCodeReader(metadataObjectTypes: [AVMetadataObjectTypeQRCode])
+            builder.showTorchButton = true
+        }
+        
+        return QRCodeReaderViewController(builder: builder)
+    }()
+    
     
     func sendToServer(currentURL : NSString, force: Int) {
         HTTPPost(server, json : ["url" : currentURL as String, "force" : String(force)]) {
@@ -111,11 +123,51 @@ class ViewController: UIViewController, UITabBarDelegate {
             // FORCE ON TV
             sendToServer(current, force: 1)
             break
+        case 4:
+            // Open QR reader
+            if QRCodeReader.supportsMetadataObjectTypes() {
+                readerVC.modalPresentationStyle = .FormSheet
+                readerVC.delegate               = self
+                
+                readerVC.completionBlock = { (result: QRCodeReaderResult?) in
+                    if let result = result {
+                        print("Completion with result: \(result.value) of type \(result.metadataType)")
+                    }
+                }
+                
+                presentViewController(readerVC, animated: true, completion: nil)
+            }
+            else {
+                let alert = UIAlertController(title: "Error", message: "Reader not supported by the current device", preferredStyle: .Alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
+                
+                presentViewController(alert, animated: true, completion: nil)
+            }
+            break
         default:
             loadSearchEngine()
             break
         }
         
+    }
+    
+    func reader(reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult) {
+        self.dismissViewControllerAnimated(true) { [weak self] in
+            HTTPPost(result.value, json: [:]) {
+                (data: String, error: String?) -> Void in
+                if error != nil {
+                    print(error)
+                } else {
+                    // DEBUG INFO
+                    print(data)
+                }
+            }
+
+        }
+    }
+    
+    func readerDidCancel(reader: QRCodeReaderViewController) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 
 

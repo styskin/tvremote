@@ -3,11 +3,12 @@ platform :ios, '9.0'
 
 target 'TVRemote' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
-  #use_frameworks!
+  use_frameworks!
   project 'TVRemote.xcodeproj'
 
   # Pods for TVRemote
   pod 'YandexSpeechKit', '2.5.0'
+  pod 'QRCodeReader.swift', '~> 6.0.0'
 
   target 'TVRemoteTests' do
     inherit! :search_paths
