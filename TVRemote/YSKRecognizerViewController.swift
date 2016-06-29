@@ -44,9 +44,9 @@ class YSKRecognizerViewController: UITableViewController, YSKRecognizerDelegate 
         
         sectionHeaderView = YSKRecognizerSectionHeaderView.loadFromNIB() as? YSKRecognizerSectionHeaderView
         
-        sectionHeaderView?.recognizeButton?.addTarget(self, action: "onRecognizerButtonTap", forControlEvents: UIControlEvents.TouchUpInside)
-        sectionHeaderView?.stopButton?.addTarget(self, action: "onStopButtonTap", forControlEvents: UIControlEvents.TouchUpInside)
-        sectionHeaderView?.exitButton?.addTarget(self, action: "onExitButtonTap", forControlEvents: UIControlEvents.TouchUpInside)
+        sectionHeaderView?.recognizeButton?.addTarget(self, action: #selector(YSKRecognizerViewController.onRecognizerButtonTap), forControlEvents: UIControlEvents.TouchUpInside)
+        sectionHeaderView?.stopButton?.addTarget(self, action: #selector(YSKRecognizerViewController.onStopButtonTap), forControlEvents: UIControlEvents.TouchUpInside)
+        sectionHeaderView?.exitButton?.addTarget(self, action: #selector(YSKRecognizerViewController.onExitButtonTap), forControlEvents: UIControlEvents.TouchUpInside)
 
         
         self.tableView.tableFooterView = UIView()

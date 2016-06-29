@@ -44,10 +44,9 @@ class ViewController: UIViewController, UITabBarDelegate, QRCodeReaderViewContro
     @IBOutlet weak var browser: UIWebView!
     
     var timer = NSTimer()
-    var curl = "https://www.yandex.ru"
     var current = "https://www.yandex.ru" as NSString
-    var server = "https://tvremote-1334.appspot.com/tv"
-//    var server = "http://192.168.199.13:8080/tv"
+    let server = "https://tvremote-1334.appspot.com/"
+//    var server = "http://192.168.199.13:8080/"
     
     lazy var readerVC: QRCodeReaderViewController = {
         let builder = QRCodeViewControllerBuilder { builder in
@@ -60,7 +59,7 @@ class ViewController: UIViewController, UITabBarDelegate, QRCodeReaderViewContro
     
     
     func sendToServer(currentURL : NSString, force: Int) {
-        HTTPPost(server, json : ["url" : currentURL as String, "force" : String(force)]) {
+        HTTPPost(server + "/tv", json : ["url" : currentURL as String, "force" : String(force)]) {
             (data: String, error: String?) -> Void in
             if error != nil {
                 print(error)
@@ -100,7 +99,7 @@ class ViewController: UIViewController, UITabBarDelegate, QRCodeReaderViewContro
             var url = "https://yandex.ru/yandsearch?text=" + query!
             searchEngineURL = NSURL(string: url.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!)
         }
-        var searchEngineURLRequest = NSURLRequest(URL: searchEngineURL!)
+        let searchEngineURLRequest = NSURLRequest(URL: searchEngineURL!)
         browser?.loadRequest(searchEngineURLRequest)
     }
     
@@ -138,6 +137,16 @@ class ViewController: UIViewController, UITabBarDelegate, QRCodeReaderViewContro
                 presentViewController(readerVC, animated: true, completion: nil)
             }
             else {
+                HTTPPost("http://localhost:8080/register?tv=880", json: [:]) {
+                    (data: String, error: String?) -> Void in
+                    if error != nil {
+                        print(error)
+                    } else {
+                        // DEBUG INFO
+                        print(data)
+                    }
+                }
+
                 let alert = UIAlertController(title: "Error", message: "Reader not supported by the current device", preferredStyle: .Alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
                 
@@ -153,7 +162,7 @@ class ViewController: UIViewController, UITabBarDelegate, QRCodeReaderViewContro
     
     func reader(reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult) {
         self.dismissViewControllerAnimated(true) { [weak self] in
-            HTTPPost(result.value, json: [:]) {
+            HTTPPost(self!.server + "/register?tv=" + result.value, json: [:]) {
                 (data: String, error: String?) -> Void in
                 if error != nil {
                     print(error)
