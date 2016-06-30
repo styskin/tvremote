@@ -9,6 +9,7 @@ target 'TVRemote' do
   # Pods for TVRemote
   pod 'YandexSpeechKit', '2.5.0'
   pod 'QRCodeReader.swift', '~> 6.0.0'
+  pod 'YandexMobileMetrica', '2.5.0'
 
   target 'TVRemoteTests' do
     inherit! :search_paths

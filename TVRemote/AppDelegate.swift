@@ -7,13 +7,21 @@
 //
 
 import UIKit
+import YandexMobileMetrica
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
+    
+    override class func initialize() {
+        if self === AppDelegate.self {
+            //Инициализация AppMetrica SDK
+            YMMYandexMetrica.activateWithApiKey("0f8d5079-806a-4a0d-b730-b69233b64474")
+        }
+    }
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Configure SpeechKit lib, this method should be called _before_ any SpeechKit functions.
         // Generate your own app key for this purpose.
