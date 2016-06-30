@@ -78,11 +78,11 @@
                                 <rect key="frame" x="0.0" y="519" width="320" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
-                                    <tabBarItem title="Yandex" id="B2p-XC-xRp"/>
-                                    <tabBarItem tag="1" title="Back" id="jOj-PI-oxq"/>
-                                    <tabBarItem tag="4" title="Bind" id="bYe-Ce-XJt"/>
-                                    <tabBarItem tag="3" title="OpenOnTV" id="pI8-b4-Pg3"/>
-                                    <tabBarItem tag="2" title="Voice" id="Om4-5c-2Fg"/>
+                                    <tabBarItem title="Яндекс" image="yandex30" selectedImage="yandex30" id="B2p-XC-xRp"/>
+                                    <tabBarItem tag="1" title="Назад" image="left-arrow30" selectedImage="left-arrow30" id="jOj-PI-oxq"/>
+                                    <tabBarItem tag="4" title="Связать с ТВ" image="hand-graving-smartphone30" selectedImage="hand-graving-smartphone30" id="bYe-Ce-XJt"/>
+                                    <tabBarItem tag="3" title="Открыть на ТВ" image="television" selectedImage="television" id="pI8-b4-Pg3"/>
+                                    <tabBarItem tag="2" title="Ввод" image="microphone_black_30" selectedImage="microphone_black_30" id="Om4-5c-2Fg"/>
                                 </items>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="ZaJ-Uk-LEe"/>
@@ -111,6 +111,13 @@
             <point key="canvasLocation" x="304" y="353"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hand-graving-smartphone30" width="30" height="30"/>
+        <image name="left-arrow30" width="30" height="30"/>
+        <image name="microphone_black_30" width="22" height="30"/>
+        <image name="television" width="30" height="30"/>
+        <image name="yandex30" width="30" height="30"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="dze-tq-7sz"/>
     </inferredMetricsTieBreakers>
