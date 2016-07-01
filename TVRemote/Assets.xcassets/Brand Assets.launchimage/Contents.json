@@ -9,16 +9,17 @@
     {
       "orientation" : "portrait",
       "idiom" : "iphone",
-      "filename" : "tv180.png",
       "minimum-system-version" : "7.0",
       "subtype" : "retina4",
       "scale" : "2x"
     },
     {
-      "orientation" : "portrait",
       "idiom" : "iphone",
-      "minimum-system-version" : "7.0",
       "subtype" : "retina4",
+      "filename" : "tv180.png",
+      "minimum-system-version" : "7.0",
+      "orientation" : "portrait",
+      "unassigned" : true,
       "scale" : "2x"
     }
   ],

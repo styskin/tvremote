@@ -138,12 +138,12 @@
                   moduleName = "TVRemote"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/styskin/Documents/TVRemote/TVRemote/ViewController.swift"
-                  timestampString = "488654349.032627"
+                  timestampString = "489014263.448135"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "156"
-                  endingLineNumber = "156"
-                  offsetFromSymbolStart = "60">
+                  startingLineNumber = "171"
+                  endingLineNumber = "171"
+                  offsetFromSymbolStart = "76">
                </Location>
                <Location
                   shouldBeEnabled = "No"
@@ -153,11 +153,11 @@
                   moduleName = "TVRemote"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/styskin/Documents/TVRemote/TVRemote/ViewController.swift"
-                  timestampString = "488654349.032843"
+                  timestampString = "489014263.448364"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "158"
-                  endingLineNumber = "158"
+                  startingLineNumber = "173"
+                  endingLineNumber = "173"
                   offsetFromSymbolStart = "68">
                </Location>
             </Locations>

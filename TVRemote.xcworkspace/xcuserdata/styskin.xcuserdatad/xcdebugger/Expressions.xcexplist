@@ -3,6 +3,25 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "ViewController.(reader(QRCodeReaderViewController, didScanResult : QRCodeReaderResult) -&gt; ()).(closure #1):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self!.server + &quot;/register?tv=&quot; + result.value">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.sendToServer(NSString, force : Int) -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "String(force)">
+            </PersistentString>
+            <PersistentString
+               value = "currentURL as String">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "ViewController.loadSearchEngine(String?) -&gt; ():ViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -21,17 +40,6 @@
             </PersistentString>
             <PersistentString
                value = "cell!.resultLabel?.text">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ViewController.sendToServer(NSString, force : Int) -&gt; ():ViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "String(force)">
-            </PersistentString>
-            <PersistentString
-               value = "currentURL as String">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
