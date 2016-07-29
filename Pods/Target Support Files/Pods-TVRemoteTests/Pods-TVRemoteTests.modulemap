@@ -1,0 +1,6 @@
+framework module Pods_TVRemoteTests {
+  umbrella header "Pods-TVRemoteTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

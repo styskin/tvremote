@@ -1,0 +1,895 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11ACA08D9E1CC6FE55FABFCF6ADD8446 /* Pods-TVRemote-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C48F0D29F1E21FEF7CA0F7EB2DDFF3B /* Pods-TVRemote-dummy.m */; };
+		25E6CA5A83CD220E6D1A1B245598BDC5 /* QRCodeReader.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A70C4ECD89022B230C160A49D4620D41 /* QRCodeReader.swift-dummy.m */; };
+		2F5EF68BC4D9C41CA50C3213DCDE3333 /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795B3FF2DB2AA992683BC87137222153 /* SwitchCameraButton.swift */; };
+		2F8640F6A90A8F71AABAFDAE0BC5D681 /* ToggleTorchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED73DA801F6B9163489A3B7834DC3BA /* ToggleTorchButton.swift */; };
+		30DBA17D74CC0F22E38A2A8BA1EDAB1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A99E1ED6492F91E6807B16994861C5 /* Foundation.framework */; };
+		4DEB191812C3FA2BCD0DFC8A47606C96 /* Pods-TVRemoteTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0718E1E308310CDFCA81E40043B9ADE /* Pods-TVRemoteTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		524C70FF3C5D77CFAA76FD72C3A92105 /* QRCodeViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E803BE937D5A6772390A85EBD9EE812 /* QRCodeViewControllerBuilder.swift */; };
+		61AAF8BBB200909EAAF9ADF171924405 /* Pods-TVRemote-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A6BE574A807ED88C9792BA40683F550 /* Pods-TVRemote-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		687482154BCA3C448D92C7C24F396F09 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283836EF5A0AA5CDF757AD35B494F1FA /* AVFoundation.framework */; };
+		6D884ACD1B4E68C8B9B0729E31AA0060 /* Pods-TVRemoteTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCECA5F23D3F0DE374DC52822B9DFE7D /* Pods-TVRemoteTests-dummy.m */; };
+		6EEADEE0A6C6222AC071DED6E13035D8 /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062763B1D2F001686321C53A945C6894 /* ReaderOverlayView.swift */; };
+		7B12F60D650F9B15221B3659C332402E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A99E1ED6492F91E6807B16994861C5 /* Foundation.framework */; };
+		826BD6FE44C790E7B0AB4ABA1B2BEC51 /* Pods-TVRemoteUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACAB68C22627EB6F98D690A5888A616 /* Pods-TVRemoteUITests-dummy.m */; };
+		833DC815C4E0ED5623DDA672D6F138EA /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B89E843FDF3BCAA085A7FC0B5C5B9E /* QRCodeViewController.swift */; };
+		A0FEFF9D1ED29A793DBCF9ABC53613E9 /* QRCodeReader.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 950ED6BA951E5365C940C7DE74E19118 /* QRCodeReader.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1E3408093A13C333C5A87355D4F9873 /* QRCodeReaderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310ED4F589020C5C9728C17C430F07A /* QRCodeReaderResult.swift */; };
+		A6539240662B97E9BBB4B27E8277EE55 /* Pods-TVRemoteUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DC570A4B92B79B4F2C973C93D642DFB /* Pods-TVRemoteUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD4CBDA8A822FF0BB711BF7134F51543 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A99E1ED6492F91E6807B16994861C5 /* Foundation.framework */; };
+		F0692395F4C5696DF4E8D2B563019C5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A99E1ED6492F91E6807B16994861C5 /* Foundation.framework */; };
+		F4024995DA4A73076592FC7D2BE90B7B /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106694392DA36590F57C88C1023558CF /* QRCodeReader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		525772735537FFF7E7CB1B9ABC9E9944 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B9F57107F0B31E33E737DEC707E41D1;
+			remoteInfo = QRCodeReader.swift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02983979D98161AF5F50C46D3D4BEF13 /* QRCodeReader.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCodeReader.swift-prefix.pch"; sourceTree = "<group>"; };
+		0310ED4F589020C5C9728C17C430F07A /* QRCodeReaderResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodeReaderResult.swift; path = QRCodeReader/QRCodeReaderResult.swift; sourceTree = "<group>"; };
+		041C1F2B8E65F008E985843BFAA6ABEC /* Pods-TVRemote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TVRemote.debug.xcconfig"; sourceTree = "<group>"; };
+		062763B1D2F001686321C53A945C6894 /* ReaderOverlayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReaderOverlayView.swift; path = QRCodeReader/ReaderOverlayView.swift; sourceTree = "<group>"; };
+		07B7D3B73B6091FD6A3B791442F25A4D /* Pods-TVRemoteUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TVRemoteUITests-frameworks.sh"; sourceTree = "<group>"; };
+		0A6BE574A807ED88C9792BA40683F550 /* Pods-TVRemote-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TVRemote-umbrella.h"; sourceTree = "<group>"; };
+		0B82E4D56B4650EE9449A2A020B4240C /* Pods-TVRemote-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TVRemote-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0ED73DA801F6B9163489A3B7834DC3BA /* ToggleTorchButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToggleTorchButton.swift; path = QRCodeReader/ToggleTorchButton.swift; sourceTree = "<group>"; };
+		106694392DA36590F57C88C1023558CF /* QRCodeReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodeReader.swift; path = QRCodeReader/QRCodeReader.swift; sourceTree = "<group>"; };
+		1229F8983323E74EE5A52F781A88801E /* Pods_TVRemoteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVRemoteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14B3383C798AADC0D7BFA62FE33E78EE /* Pods-TVRemoteTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TVRemoteTests-resources.sh"; sourceTree = "<group>"; };
+		1E1A2CB846FA877B7F058CFB2F36C34A /* Pods-TVRemote-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TVRemote-acknowledgements.plist"; sourceTree = "<group>"; };
+		20BD8D90BEC31E8D4D85C5A29FB8EE3C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		283836EF5A0AA5CDF757AD35B494F1FA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		3481F41DC89E28DC2DAB20AC988F8DF8 /* Pods-TVRemoteUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TVRemoteUITests.modulemap"; sourceTree = "<group>"; };
+		36D30F558DBFB1442F5960E0EC391321 /* Pods-TVRemote-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TVRemote-frameworks.sh"; sourceTree = "<group>"; };
+		3E803BE937D5A6772390A85EBD9EE812 /* QRCodeViewControllerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodeViewControllerBuilder.swift; path = QRCodeReader/QRCodeViewControllerBuilder.swift; sourceTree = "<group>"; };
+		54426DC6EC269C87EE367EE7361DB28C /* QRCodeReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QRCodeReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AF7A034099D859562EFA637EAD0DC55 /* QRCodeReader.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QRCodeReader.swift.xcconfig; sourceTree = "<group>"; };
+		6A56281E209C382360A03713A915DD39 /* YandexMobileMetrica.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YandexMobileMetrica.framework; sourceTree = "<group>"; };
+		6D23718DE0E0EBF21A81CB9897EDA163 /* Pods-TVRemoteTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TVRemoteTests-frameworks.sh"; sourceTree = "<group>"; };
+		795B3FF2DB2AA992683BC87137222153 /* SwitchCameraButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwitchCameraButton.swift; path = QRCodeReader/SwitchCameraButton.swift; sourceTree = "<group>"; };
+		7ACAB68C22627EB6F98D690A5888A616 /* Pods-TVRemoteUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TVRemoteUITests-dummy.m"; sourceTree = "<group>"; };
+		7DC570A4B92B79B4F2C973C93D642DFB /* Pods-TVRemoteUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TVRemoteUITests-umbrella.h"; sourceTree = "<group>"; };
+		879F46B868F58207521065560225A514 /* Pods_TVRemote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVRemote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94DD68E03B6E1BA8D11BD107D98730E8 /* Pods-TVRemoteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TVRemoteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		950ED6BA951E5365C940C7DE74E19118 /* QRCodeReader.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCodeReader.swift-umbrella.h"; sourceTree = "<group>"; };
+		95219DB70A340BC27339CE0010B1F8E2 /* YandexSpeechKit.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = YandexSpeechKit.bundle; path = YandexSpeechKit.framework/Versions/A/Resources/YandexSpeechKit.bundle; sourceTree = "<group>"; };
+		96A99E1ED6492F91E6807B16994861C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9C0C2583A900DA0B45B506096B45C4C8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C48F0D29F1E21FEF7CA0F7EB2DDFF3B /* Pods-TVRemote-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TVRemote-dummy.m"; sourceTree = "<group>"; };
+		A70C4ECD89022B230C160A49D4620D41 /* QRCodeReader.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QRCodeReader.swift-dummy.m"; sourceTree = "<group>"; };
+		A761CA87C351D7DECC7A3BBFC6EB2706 /* Pods-TVRemoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TVRemoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B0718E1E308310CDFCA81E40043B9ADE /* Pods-TVRemoteTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TVRemoteTests-umbrella.h"; sourceTree = "<group>"; };
+		B2676A96EF125EF3BF86B75A650D1D8D /* Pods-TVRemoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TVRemoteTests.release.xcconfig"; sourceTree = "<group>"; };
+		B27E641FB3A562B1744BE09A411B236F /* Pods-TVRemoteUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TVRemoteUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B456D7416C75851D1F17696E06C02CD7 /* Pods_TVRemoteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVRemoteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B846F4D284BCCE6CFFD3944C94E4D925 /* QRCodeReader.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = QRCodeReader.swift.modulemap; sourceTree = "<group>"; };
+		BA48FB820387718CD825B9891477CC2B /* Pods-TVRemote.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TVRemote.modulemap"; sourceTree = "<group>"; };
+		C73C6CDB10C92AEDD3E88274590B56BC /* Pods-TVRemoteTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TVRemoteTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C8B81F211A5D320F6D79A242BB28C26C /* Pods-TVRemoteUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TVRemoteUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CCECA5F23D3F0DE374DC52822B9DFE7D /* Pods-TVRemoteTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TVRemoteTests-dummy.m"; sourceTree = "<group>"; };
+		D249734DE968B85897051EFF06148CEB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D74E08BD6ACB9FFDEB49F48F570EE1FD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D757D891A8772C5983D0670A7433016E /* Pods-TVRemoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TVRemoteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D8B89E843FDF3BCAA085A7FC0B5C5B9E /* QRCodeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodeViewController.swift; path = QRCodeReader/QRCodeViewController.swift; sourceTree = "<group>"; };
+		E139C9240345E02A0027FCA51760625E /* Pods-TVRemoteTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TVRemoteTests.modulemap"; sourceTree = "<group>"; };
+		E1716BB1EF42AEF63AB96B98B53005D4 /* Pods-TVRemoteTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TVRemoteTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E6BE37421A9A2B6B56EC3BC87552605E /* Pods-TVRemote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TVRemote.release.xcconfig"; sourceTree = "<group>"; };
+		F9CCB403F0F1C1B9BCB3FD0F2246E16B /* Pods-TVRemoteUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TVRemoteUITests-resources.sh"; sourceTree = "<group>"; };
+		FDE8C34F791B40135EB84118B1D0B8F7 /* Pods-TVRemote-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TVRemote-resources.sh"; sourceTree = "<group>"; };
+		FF71DFCBD591AD8DE714CC25B762066A /* YandexSpeechKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YandexSpeechKit.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		715D06451EC3EE8B305A97F9ABB71226 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30DBA17D74CC0F22E38A2A8BA1EDAB1F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E53E7DB533BEE5516644F72947C6AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				687482154BCA3C448D92C7C24F396F09 /* AVFoundation.framework in Frameworks */,
+				7B12F60D650F9B15221B3659C332402E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E057BFDA26A8E3965A9CAAC97F2374E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0692395F4C5696DF4E8D2B563019C5A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2BEE9DDC0444FD0275790BB646581AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD4CBDA8A822FF0BB711BF7134F51543 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		388BDC8A83A7D380645DA253A6DCFC32 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				95219DB70A340BC27339CE0010B1F8E2 /* YandexSpeechKit.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		38C242FBF342C30925E0573F13DAE3F9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F231EE74BB9799DE8A7694F6F4979096 /* Pods-TVRemote */,
+				94B9787600768D801520E11D023C5A67 /* Pods-TVRemoteTests */,
+				B81BC0D45F9AC8D3BDAB3656A4BC25C1 /* Pods-TVRemoteUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A40AF8D79D4382828A0EEAD80AB26358 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57A1A3A700610125486D6C3F74BFFFAA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D249734DE968B85897051EFF06148CEB /* Info.plist */,
+				B846F4D284BCCE6CFFD3944C94E4D925 /* QRCodeReader.swift.modulemap */,
+				5AF7A034099D859562EFA637EAD0DC55 /* QRCodeReader.swift.xcconfig */,
+				A70C4ECD89022B230C160A49D4620D41 /* QRCodeReader.swift-dummy.m */,
+				02983979D98161AF5F50C46D3D4BEF13 /* QRCodeReader.swift-prefix.pch */,
+				950ED6BA951E5365C940C7DE74E19118 /* QRCodeReader.swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/QRCodeReader.swift";
+			sourceTree = "<group>";
+		};
+		727C6774F429671C5CD2BE505588C40C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF71DFCBD591AD8DE714CC25B762066A /* YandexSpeechKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		731A9C0B8BDBC43C3CFD43873E861110 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3C02CEDD69DA4977FC3B5816CD8ADD9 /* QRCodeReader.swift */,
+				E8A01CBBF6DC6B7504CDF7001A3F2B52 /* YandexMobileMetrica */,
+				D477DC9C6CCCF776B30A40576C5630D8 /* YandexSpeechKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				731A9C0B8BDBC43C3CFD43873E861110 /* Pods */,
+				C396A265ED6B7765D0FED0696274E9F7 /* Products */,
+				38C242FBF342C30925E0573F13DAE3F9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		94B9787600768D801520E11D023C5A67 /* Pods-TVRemoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				D74E08BD6ACB9FFDEB49F48F570EE1FD /* Info.plist */,
+				E139C9240345E02A0027FCA51760625E /* Pods-TVRemoteTests.modulemap */,
+				E1716BB1EF42AEF63AB96B98B53005D4 /* Pods-TVRemoteTests-acknowledgements.markdown */,
+				C73C6CDB10C92AEDD3E88274590B56BC /* Pods-TVRemoteTests-acknowledgements.plist */,
+				CCECA5F23D3F0DE374DC52822B9DFE7D /* Pods-TVRemoteTests-dummy.m */,
+				6D23718DE0E0EBF21A81CB9897EDA163 /* Pods-TVRemoteTests-frameworks.sh */,
+				14B3383C798AADC0D7BFA62FE33E78EE /* Pods-TVRemoteTests-resources.sh */,
+				B0718E1E308310CDFCA81E40043B9ADE /* Pods-TVRemoteTests-umbrella.h */,
+				A761CA87C351D7DECC7A3BBFC6EB2706 /* Pods-TVRemoteTests.debug.xcconfig */,
+				B2676A96EF125EF3BF86B75A650D1D8D /* Pods-TVRemoteTests.release.xcconfig */,
+			);
+			name = "Pods-TVRemoteTests";
+			path = "Target Support Files/Pods-TVRemoteTests";
+			sourceTree = "<group>";
+		};
+		A40AF8D79D4382828A0EEAD80AB26358 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				283836EF5A0AA5CDF757AD35B494F1FA /* AVFoundation.framework */,
+				96A99E1ED6492F91E6807B16994861C5 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B81BC0D45F9AC8D3BDAB3656A4BC25C1 /* Pods-TVRemoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9C0C2583A900DA0B45B506096B45C4C8 /* Info.plist */,
+				3481F41DC89E28DC2DAB20AC988F8DF8 /* Pods-TVRemoteUITests.modulemap */,
+				B27E641FB3A562B1744BE09A411B236F /* Pods-TVRemoteUITests-acknowledgements.markdown */,
+				C8B81F211A5D320F6D79A242BB28C26C /* Pods-TVRemoteUITests-acknowledgements.plist */,
+				7ACAB68C22627EB6F98D690A5888A616 /* Pods-TVRemoteUITests-dummy.m */,
+				07B7D3B73B6091FD6A3B791442F25A4D /* Pods-TVRemoteUITests-frameworks.sh */,
+				F9CCB403F0F1C1B9BCB3FD0F2246E16B /* Pods-TVRemoteUITests-resources.sh */,
+				7DC570A4B92B79B4F2C973C93D642DFB /* Pods-TVRemoteUITests-umbrella.h */,
+				94DD68E03B6E1BA8D11BD107D98730E8 /* Pods-TVRemoteUITests.debug.xcconfig */,
+				D757D891A8772C5983D0670A7433016E /* Pods-TVRemoteUITests.release.xcconfig */,
+			);
+			name = "Pods-TVRemoteUITests";
+			path = "Target Support Files/Pods-TVRemoteUITests";
+			sourceTree = "<group>";
+		};
+		BF777ABD2962BADE57A778486017DC42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A56281E209C382360A03713A915DD39 /* YandexMobileMetrica.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C396A265ED6B7765D0FED0696274E9F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				879F46B868F58207521065560225A514 /* Pods_TVRemote.framework */,
+				1229F8983323E74EE5A52F781A88801E /* Pods_TVRemoteTests.framework */,
+				B456D7416C75851D1F17696E06C02CD7 /* Pods_TVRemoteUITests.framework */,
+				54426DC6EC269C87EE367EE7361DB28C /* QRCodeReader.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D477DC9C6CCCF776B30A40576C5630D8 /* YandexSpeechKit */ = {
+			isa = PBXGroup;
+			children = (
+				727C6774F429671C5CD2BE505588C40C /* Frameworks */,
+				388BDC8A83A7D380645DA253A6DCFC32 /* Resources */,
+			);
+			path = YandexSpeechKit;
+			sourceTree = "<group>";
+		};
+		E3C02CEDD69DA4977FC3B5816CD8ADD9 /* QRCodeReader.swift */ = {
+			isa = PBXGroup;
+			children = (
+				106694392DA36590F57C88C1023558CF /* QRCodeReader.swift */,
+				0310ED4F589020C5C9728C17C430F07A /* QRCodeReaderResult.swift */,
+				D8B89E843FDF3BCAA085A7FC0B5C5B9E /* QRCodeViewController.swift */,
+				3E803BE937D5A6772390A85EBD9EE812 /* QRCodeViewControllerBuilder.swift */,
+				062763B1D2F001686321C53A945C6894 /* ReaderOverlayView.swift */,
+				795B3FF2DB2AA992683BC87137222153 /* SwitchCameraButton.swift */,
+				0ED73DA801F6B9163489A3B7834DC3BA /* ToggleTorchButton.swift */,
+				57A1A3A700610125486D6C3F74BFFFAA /* Support Files */,
+			);
+			path = QRCodeReader.swift;
+			sourceTree = "<group>";
+		};
+		E8A01CBBF6DC6B7504CDF7001A3F2B52 /* YandexMobileMetrica */ = {
+			isa = PBXGroup;
+			children = (
+				BF777ABD2962BADE57A778486017DC42 /* Frameworks */,
+			);
+			path = YandexMobileMetrica;
+			sourceTree = "<group>";
+		};
+		F231EE74BB9799DE8A7694F6F4979096 /* Pods-TVRemote */ = {
+			isa = PBXGroup;
+			children = (
+				20BD8D90BEC31E8D4D85C5A29FB8EE3C /* Info.plist */,
+				BA48FB820387718CD825B9891477CC2B /* Pods-TVRemote.modulemap */,
+				0B82E4D56B4650EE9449A2A020B4240C /* Pods-TVRemote-acknowledgements.markdown */,
+				1E1A2CB846FA877B7F058CFB2F36C34A /* Pods-TVRemote-acknowledgements.plist */,
+				9C48F0D29F1E21FEF7CA0F7EB2DDFF3B /* Pods-TVRemote-dummy.m */,
+				36D30F558DBFB1442F5960E0EC391321 /* Pods-TVRemote-frameworks.sh */,
+				FDE8C34F791B40135EB84118B1D0B8F7 /* Pods-TVRemote-resources.sh */,
+				0A6BE574A807ED88C9792BA40683F550 /* Pods-TVRemote-umbrella.h */,
+				041C1F2B8E65F008E985843BFAA6ABEC /* Pods-TVRemote.debug.xcconfig */,
+				E6BE37421A9A2B6B56EC3BC87552605E /* Pods-TVRemote.release.xcconfig */,
+			);
+			name = "Pods-TVRemote";
+			path = "Target Support Files/Pods-TVRemote";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2D1F1BD957B120D69F403E1C306A3D90 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DEB191812C3FA2BCD0DFC8A47606C96 /* Pods-TVRemoteTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AEEDD29926422D73529058443C6E3BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0FEFF9D1ED29A793DBCF9ABC53613E9 /* QRCodeReader.swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE7B58970C51C6D115EBF0F259ADD5E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AAF8BBB200909EAAF9ADF171924405 /* Pods-TVRemote-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D772C4E393624575A788971C431B4FA8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6539240662B97E9BBB4B27E8277EE55 /* Pods-TVRemoteUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		61AC58751350FC078A8B198A844C47B2 /* Pods-TVRemoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B68AF5F4585F6F5AF4A85BC6BC3424BD /* Build configuration list for PBXNativeTarget "Pods-TVRemoteUITests" */;
+			buildPhases = (
+				B65DA224E89ADF5F3DAB1C10CBD02407 /* Sources */,
+				E057BFDA26A8E3965A9CAAC97F2374E8 /* Frameworks */,
+				D772C4E393624575A788971C431B4FA8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TVRemoteUITests";
+			productName = "Pods-TVRemoteUITests";
+			productReference = B456D7416C75851D1F17696E06C02CD7 /* Pods_TVRemoteUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		742E373F99C9CA9BB18FCD126D764B3A /* Pods-TVRemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B437B50B1E27A8112082E1204E571E62 /* Build configuration list for PBXNativeTarget "Pods-TVRemoteTests" */;
+			buildPhases = (
+				36260F250AC30482F687E406C96D8EB8 /* Sources */,
+				715D06451EC3EE8B305A97F9ABB71226 /* Frameworks */,
+				2D1F1BD957B120D69F403E1C306A3D90 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TVRemoteTests";
+			productName = "Pods-TVRemoteTests";
+			productReference = 1229F8983323E74EE5A52F781A88801E /* Pods_TVRemoteTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7B9F57107F0B31E33E737DEC707E41D1 /* QRCodeReader.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C6E80DB2F0EDA4CA7AC2C5F17C95403 /* Build configuration list for PBXNativeTarget "QRCodeReader.swift" */;
+			buildPhases = (
+				BC367392859A4CF1A4C092CF999F5269 /* Sources */,
+				B0E53E7DB533BEE5516644F72947C6AA /* Frameworks */,
+				9AEEDD29926422D73529058443C6E3BF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QRCodeReader.swift;
+			productName = QRCodeReader.swift;
+			productReference = 54426DC6EC269C87EE367EE7361DB28C /* QRCodeReader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E2C7896E76E34F62D64007F40B596379 /* Pods-TVRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 784EF333F2408323E8ADD38E94D7DBBE /* Build configuration list for PBXNativeTarget "Pods-TVRemote" */;
+			buildPhases = (
+				6B8D1041DED74F91626899BCDAF12BA7 /* Sources */,
+				E2BEE9DDC0444FD0275790BB646581AC /* Frameworks */,
+				AFE7B58970C51C6D115EBF0F259ADD5E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E120B279F167F1E1DA87DFDFD9821EF5 /* PBXTargetDependency */,
+			);
+			name = "Pods-TVRemote";
+			productName = "Pods-TVRemote";
+			productReference = 879F46B868F58207521065560225A514 /* Pods_TVRemote.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C396A265ED6B7765D0FED0696274E9F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2C7896E76E34F62D64007F40B596379 /* Pods-TVRemote */,
+				742E373F99C9CA9BB18FCD126D764B3A /* Pods-TVRemoteTests */,
+				61AC58751350FC078A8B198A844C47B2 /* Pods-TVRemoteUITests */,
+				7B9F57107F0B31E33E737DEC707E41D1 /* QRCodeReader.swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36260F250AC30482F687E406C96D8EB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D884ACD1B4E68C8B9B0729E31AA0060 /* Pods-TVRemoteTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B8D1041DED74F91626899BCDAF12BA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11ACA08D9E1CC6FE55FABFCF6ADD8446 /* Pods-TVRemote-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B65DA224E89ADF5F3DAB1C10CBD02407 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				826BD6FE44C790E7B0AB4ABA1B2BEC51 /* Pods-TVRemoteUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC367392859A4CF1A4C092CF999F5269 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4024995DA4A73076592FC7D2BE90B7B /* QRCodeReader.swift in Sources */,
+				25E6CA5A83CD220E6D1A1B245598BDC5 /* QRCodeReader.swift-dummy.m in Sources */,
+				A1E3408093A13C333C5A87355D4F9873 /* QRCodeReaderResult.swift in Sources */,
+				833DC815C4E0ED5623DDA672D6F138EA /* QRCodeViewController.swift in Sources */,
+				524C70FF3C5D77CFAA76FD72C3A92105 /* QRCodeViewControllerBuilder.swift in Sources */,
+				6EEADEE0A6C6222AC071DED6E13035D8 /* ReaderOverlayView.swift in Sources */,
+				2F5EF68BC4D9C41CA50C3213DCDE3333 /* SwitchCameraButton.swift in Sources */,
+				2F8640F6A90A8F71AABAFDAE0BC5D681 /* ToggleTorchButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E120B279F167F1E1DA87DFDFD9821EF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QRCodeReader.swift;
+			target = 7B9F57107F0B31E33E737DEC707E41D1 /* QRCodeReader.swift */;
+			targetProxy = 525772735537FFF7E7CB1B9ABC9E9944 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0062A6C420F950441D2D40867568D952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 041C1F2B8E65F008E985843BFAA6ABEC /* Pods-TVRemote.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TVRemote/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TVRemote/Pods-TVRemote.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TVRemote;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		034014829C1E4434983CF3A690C12017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		09E87003B7CC6FFF65771685DD70D5D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2676A96EF125EF3BF86B75A650D1D8D /* Pods-TVRemoteTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TVRemoteTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TVRemoteTests/Pods-TVRemoteTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TVRemoteTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		268E35CF46B1CA87B8AC315A3DE75A5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94DD68E03B6E1BA8D11BD107D98730E8 /* Pods-TVRemoteUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TVRemoteUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TVRemoteUITests/Pods-TVRemoteUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TVRemoteUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4A804CA47BC0220012435D4B3FF65629 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D757D891A8772C5983D0670A7433016E /* Pods-TVRemoteUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TVRemoteUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TVRemoteUITests/Pods-TVRemoteUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TVRemoteUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		91C41D96262F18B075E94C484961210E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A761CA87C351D7DECC7A3BBFC6EB2706 /* Pods-TVRemoteTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TVRemoteTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TVRemoteTests/Pods-TVRemoteTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TVRemoteTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9AE7DE6E580889C3ED0512FA7732035A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6BE37421A9A2B6B56EC3BC87552605E /* Pods-TVRemote.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TVRemote/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TVRemote/Pods-TVRemote.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TVRemote;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AA29D5A41967165E7C11859783E84F5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AF7A034099D859562EFA637EAD0DC55 /* QRCodeReader.swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/QRCodeReader.swift/QRCodeReader.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QRCodeReader.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QRCodeReader.swift/QRCodeReader.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = QRCodeReader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D93909373B541104346C36B4E29EBCB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AF7A034099D859562EFA637EAD0DC55 /* QRCodeReader.swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/QRCodeReader.swift/QRCodeReader.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QRCodeReader.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QRCodeReader.swift/QRCodeReader.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = QRCodeReader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034014829C1E4434983CF3A690C12017 /* Debug */,
+				C7E474A03CAE21F1CB6046E7344C59BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C6E80DB2F0EDA4CA7AC2C5F17C95403 /* Build configuration list for PBXNativeTarget "QRCodeReader.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D93909373B541104346C36B4E29EBCB7 /* Debug */,
+				AA29D5A41967165E7C11859783E84F5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		784EF333F2408323E8ADD38E94D7DBBE /* Build configuration list for PBXNativeTarget "Pods-TVRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0062A6C420F950441D2D40867568D952 /* Debug */,
+				9AE7DE6E580889C3ED0512FA7732035A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B437B50B1E27A8112082E1204E571E62 /* Build configuration list for PBXNativeTarget "Pods-TVRemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91C41D96262F18B075E94C484961210E /* Debug */,
+				09E87003B7CC6FFF65771685DD70D5D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B68AF5F4585F6F5AF4A85BC6BC3424BD /* Build configuration list for PBXNativeTarget "Pods-TVRemoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268E35CF46B1CA87B8AC315A3DE75A5C /* Debug */,
+				4A804CA47BC0220012435D4B3FF65629 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

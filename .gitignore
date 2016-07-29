@@ -1,0 +1,9 @@
+# OS X
+.DS_Store
+
+# Xcode
+xcuserdata
+project.xcworkspace
+xcuserdata
+*.xccheckout
+*.xcscmblueprint

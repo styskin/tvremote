@@ -1,0 +1,18 @@
+PODS:
+  - QRCodeReader.swift (6.0.0)
+  - YandexMobileMetrica (2.5.0)
+  - YandexSpeechKit (2.5.0)
+
+DEPENDENCIES:
+  - QRCodeReader.swift (~> 6.0.0)
+  - YandexMobileMetrica (= 2.5.0)
+  - YandexSpeechKit (= 2.5.0)
+
+SPEC CHECKSUMS:
+  QRCodeReader.swift: 4aa8b0f88847a51312d6ffd2cafc387962da9dd8
+  YandexMobileMetrica: 859ebf92d316fc4b9822583c1ceec60079ec9945
+  YandexSpeechKit: 4c0ee53139175bebef965dfa858044dc7c14b0b9
+
+PODFILE CHECKSUM: 7cc9afbe78279cf698ab167b6ccdf0d434cc8d40
+
+COCOAPODS: 1.0.1
