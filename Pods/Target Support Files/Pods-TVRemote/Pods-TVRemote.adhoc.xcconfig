@@ -1,0 +1,11 @@
+EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/QRCodeReader.swift" "${PODS_ROOT}/YandexMobileMetrica" "${PODS_ROOT}/YandexSpeechKit"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/YandexMobileMetrica" "${PODS_ROOT}/Headers/Public/YandexSpeechKit"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/QRCodeReader.swift/QRCodeReader.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/YandexMobileMetrica" -isystem "${PODS_ROOT}/Headers/Public/YandexSpeechKit"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"sqlite3" -l"z" -framework "AVFoundation" -framework "AdSupport" -framework "AudioToolbox" -framework "CoreAudio" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreTelephony" -framework "Foundation" -framework "QRCodeReader" -framework "QuartzCore" -framework "SystemConfiguration" -framework "UIKit" -framework "YandexMobileMetrica" -framework "YandexSpeechKit" -weak_framework "SafariServices"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}/Pods
