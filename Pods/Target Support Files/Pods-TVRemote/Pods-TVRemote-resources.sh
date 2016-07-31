@@ -85,6 +85,9 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "YandexSpeechKit/YandexSpeechKit.framework/Versions/A/Resources/YandexSpeechKit.bundle"
 fi
+if [[ "$CONFIGURATION" == "AdHoc" ]]; then
+  install_resource "YandexSpeechKit/YandexSpeechKit.framework/Versions/A/Resources/YandexSpeechKit.bundle"
+fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

@@ -47,12 +47,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		202D21EA354828C485401194 /* Pods-TVRemote.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemote.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-TVRemote/Pods-TVRemote.adhoc.xcconfig"; sourceTree = "<group>"; };
 		28E428921C59CF8E310C86A7 /* Pods-TVRemoteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemoteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVRemoteUITests/Pods-TVRemoteUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3A0F2CF781ECE0D7FE9DFA03 /* Pods-TVRemoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVRemoteTests/Pods-TVRemoteTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3BBDA971B271B12435408772 /* Pods_TVRemoteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVRemoteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41EAD9DCF60F89BD163A2866 /* Pods-TVRemoteUITests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemoteUITests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-TVRemoteUITests/Pods-TVRemoteUITests.adhoc.xcconfig"; sourceTree = "<group>"; };
 		64F8B42E6E9FC9AA89F541E4 /* Pods-TVRemoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemoteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVRemoteTests/Pods-TVRemoteTests.release.xcconfig"; sourceTree = "<group>"; };
 		668EB7AF1432CE6EA19BC062 /* Pods_TVRemoteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVRemoteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C0AB053E1921627F0A9C370 /* Pods-TVRemote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVRemote/Pods-TVRemote.debug.xcconfig"; sourceTree = "<group>"; };
+		77F3C6E75DE59EF2C22578F0 /* Pods-TVRemoteTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemoteTests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-TVRemoteTests/Pods-TVRemoteTests.adhoc.xcconfig"; sourceTree = "<group>"; };
 		A5DA4F41B13D484EBEB92650 /* Pods_TVRemote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVRemote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD20F63F8C999C83F80805B3 /* Pods-TVRemote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemote.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVRemote/Pods-TVRemote.release.xcconfig"; sourceTree = "<group>"; };
 		E434D7329AF6C36FD83A7CD2 /* Pods-TVRemoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVRemoteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVRemoteUITests/Pods-TVRemoteUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +130,9 @@
 				64F8B42E6E9FC9AA89F541E4 /* Pods-TVRemoteTests.release.xcconfig */,
 				28E428921C59CF8E310C86A7 /* Pods-TVRemoteUITests.debug.xcconfig */,
 				E434D7329AF6C36FD83A7CD2 /* Pods-TVRemoteUITests.release.xcconfig */,
+				202D21EA354828C485401194 /* Pods-TVRemote.adhoc.xcconfig */,
+				77F3C6E75DE59EF2C22578F0 /* Pods-TVRemoteTests.adhoc.xcconfig */,
+				41EAD9DCF60F89BD163A2866 /* Pods-TVRemoteUITests.adhoc.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -597,7 +603,7 @@
 		};
 		D6A7D4341D4E499A003D611F /* AdHoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD20F63F8C999C83F80805B3 /* Pods-TVRemote.release.xcconfig */;
+			baseConfigurationReference = 202D21EA354828C485401194 /* Pods-TVRemote.adhoc.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -616,7 +622,7 @@
 		};
 		D6A7D4351D4E499A003D611F /* AdHoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64F8B42E6E9FC9AA89F541E4 /* Pods-TVRemoteTests.release.xcconfig */;
+			baseConfigurationReference = 77F3C6E75DE59EF2C22578F0 /* Pods-TVRemoteTests.adhoc.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TVRemoteTests/Info.plist;
@@ -629,7 +635,7 @@
 		};
 		D6A7D4361D4E499A003D611F /* AdHoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E434D7329AF6C36FD83A7CD2 /* Pods-TVRemoteUITests.release.xcconfig */;
+			baseConfigurationReference = 41EAD9DCF60F89BD163A2866 /* Pods-TVRemoteUITests.adhoc.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = TVRemoteUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
