@@ -46,8 +46,9 @@ class ViewController: UIViewController, UITabBarDelegate, QRCodeReaderViewContro
     
     var timer = NSTimer()
     var current = "https://www.yandex.ru" as NSString
-    let server = "https://tvremote-1334.appspot.com"
+//    let server = "https://tvremote-1334.appspot.com"
 //    let server = "http://localhost:8989"
+    let server = "http://jtvremote.herokuapp.com"
     
     lazy var readerVC: QRCodeReaderViewController = {
         
