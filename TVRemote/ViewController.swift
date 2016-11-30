@@ -47,12 +47,14 @@ class ViewController: UIViewController, UITabBarDelegate, QRCodeReaderViewContro
     var timer = NSTimer()
     var current = "https://www.yandex.ru" as NSString
     let server = "https://tvremote-1334.appspot.com"
-//    let server = "http://192.168.199.13:8080"
+//    let server = "http://localhost:8989"
     
     lazy var readerVC: QRCodeReaderViewController = {
+        
         let builder = QRCodeViewControllerBuilder { builder in
             builder.reader          = QRCodeReader(metadataObjectTypes: [AVMetadataObjectTypeQRCode])
             builder.showTorchButton = true
+            builder.cancelButtonTitle = "http://jtvremote.herokuapp.com"
         }
         
         return QRCodeReaderViewController(builder: builder)
@@ -151,12 +153,20 @@ class ViewController: UIViewController, UITabBarDelegate, QRCodeReaderViewContro
                 }
                 
                 presentViewController(readerVC, animated: true, completion: nil)
-            }
-            else {
+            } else {
                 // USE manual code input
                 let alert = UIAlertController(title: "Error", message: "Reader not supported by the current device", preferredStyle: .Alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
                 presentViewController(alert, animated: true, completion: nil)
+                
+//                HTTPPost(server + "/register?tv=1480457098427322.0", json: [:]) {
+//                    (data: String, error: String?) -> Void in
+//                    if error != nil {
+//                        NSLog("Error on post qr% %@", error!)
+//                    } else {
+//                        NSLog("Send qr% %@", data)
+//                    }
+//                }
             }
             break
         default:
